@@ -1,0 +1,239 @@
+.container_list {
+  grid-column: 1 / 7;
+  background: #303141;
+  border-bottom: 1px solid rgba(76, 96, 133, 0.5);
+  grid-auto-rows: max-content;
+  padding: 2rem 2.5rem;
+  scrollbar-width: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    grid-column: 1 / 9;
+    padding: 2.5rem 24px;
+  }
+
+  @media (min-width: 1280px) {
+    grid-column: 1 / 13;
+  }
+}
+
+.title_list {
+  color: #888;
+  font-family: Arial, sans-serif;
+}
+
+.container_header_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown-trigger-card {
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 5px;
+  border: none;
+  color: white;
+  font-family: Arial, sans-serif;
+  background-color: rgba(76, 96, 133, 0.2);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.container_list_animals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  height: fit-content;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+.card_list {
+  background-color: rgba(76, 96, 133, 0.2);
+  border-radius: 5px;
+  height: fit-content;
+  padding: 20px;
+  img {
+    width: 5rem;
+  }
+}
+
+.colored-dot {
+  color: white;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.colored-dot::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #39e29d;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+.counter-container {
+  display: inline-flex;
+  justify-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 3.5rem;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  background: rgba(76, 96, 133, 0.5);
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.arrow button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+.arrow button:hover {
+  color: blue;
+}
+
+.arrow .up {
+  margin-bottom: 5px;
+}
+
+.stock_container {
+  border: 1px solid #39e29d;
+  border-radius: 2px;
+  color: #39e29d;
+  display: block;
+  font-size: 10px;
+  padding: 9px;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  width: 50px;
+  margin-top: -0.8rem;
+  margin-bottom: 1rem;
+}
+
+.product-card {
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+
+.product-info {
+  margin-bottom: 20px;
+}
+
+.product-title {
+  font-weight: normal;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.product-badge {
+  display: inline-block;
+  border: 1px solid #39e29d;
+  border-radius: 100px;
+  padding: 5px;
+  font-size: 0.8em;
+  color: #0d1e3f;
+  img {
+    width: 20px;
+  }
+}
+
+.product-price {
+  display: flex;
+  align-items: baseline;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.current-price {
+  font-size: 1.4em;
+  margin-right: 10px;
+}
+
+.old-price {
+  font-size: 1.4em;
+  color: #c4c4c4;
+}
+
+.line-through {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+.product-description {
+  width: 100%;
+  font-size: 0.76rem;
+  line-height: 20px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.product-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-button {
+  width: 6rem;
+  background-color: rgba(76, 96, 133, 0.5);
+  border: none;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.add-button {
+  width: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4f46e5;
+  border: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.add-button .cart-icon {
+  background: #454da8;
+  border-radius: 4px;
+  padding: 6px 8px;
+}

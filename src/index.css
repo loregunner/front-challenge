@@ -1,0 +1,11 @@
+:root {
+  background-image: url('./assets/images/cover.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+body {
+  margin: 0;
+}

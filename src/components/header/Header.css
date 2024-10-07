@@ -1,0 +1,167 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 50px;
+  background: #303141;
+  border-bottom: 1px solid rgba(76, 96, 133, 0.5);
+}
+
+.logo img {
+  height: 20px;
+  border-right: none;
+  padding: 0px 40px 0px 0px;
+}
+
+.navbar {
+  display: none;
+  flex-direction: row;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.selection_items_navbar {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.currency {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.cart button {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  border: none;
+  color: #888;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+  span {
+    margin-left: 5px;
+  }
+}
+
+.login {
+  display: flex;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: #39e29d;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+  span {
+    margin-right: 5px;
+  }
+}
+
+.hamburger {
+  display: block;
+  font-size: 25px;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #303141;
+  z-index: 2000;
+  padding: 10px;
+  text-align: center;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin: 2rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(76, 96, 133, 0.5);
+}
+
+.mobile-menu a {
+  display: block;
+  color: white;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.close-btn {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  padding-bottom: 3rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .logo img {
+    height: 25px;
+    border-right: none;
+    padding: 0px 20rem 0px 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logo img {
+    height: 35px;
+    border-right: 1px solid #fff;
+    padding: 0px 30px 10px 0px;
+  }
+  .hamburger {
+    display: none;
+ }
+ .navbar {
+    display: flex;
+    margin-left: -8rem;
+  }
+  .selection_items_navbar {
+    color: white;
+  }
+  .cart button {
+    font-weight: normal;
+    color: #fff;
+  }
+}
